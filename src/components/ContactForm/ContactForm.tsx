@@ -63,9 +63,10 @@ const ContactForm = ({ onContactFormSubmit }: ContactFormProps) => {
     <form onSubmit={onSubmit} className="mx-auto">
       <div className="mb-4">
         <label className="text-primary-100 mb-2 block font-bold">
-          Last Name
+          Full Name
         </label>
         <input
+          data-testid="fullName-input"
           type="text"
           name="fullName"
           value={formData.fullName}
@@ -84,6 +85,7 @@ const ContactForm = ({ onContactFormSubmit }: ContactFormProps) => {
           Phone Number
         </label>
         <input
+          data-testid="phoneNumber-input"
           type="text"
           name="phoneNumber"
           value={formData.phoneNumber}

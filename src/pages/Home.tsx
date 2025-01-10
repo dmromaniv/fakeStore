@@ -23,7 +23,7 @@ const HomePage = () => {
           onCategoryClick={onCategoryClick}
         />
       </section>
-      <section className="container">
+      <section className="container pb-5">
         {isLoadingStatus ? <ProductCardSkeleton /> : <ProductList />}
       </section>
     </Layout>
