@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
-      <main className="mt-10 p-4">{children}</main>
+      <main>{children}</main>
     </>
   );
 };

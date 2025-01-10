@@ -23,3 +23,12 @@ export async function fetchCategoryProducts(category: string) {
 
   return response.data;
 }
+
+export async function fetchCategories() {
+  const response: AxiosResponse<string[]> = await axiosInstance.get(
+    "/products/categories",
+    {},
+  );
+
+  return response.data;
+}
